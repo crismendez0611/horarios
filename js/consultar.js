@@ -1,7 +1,10 @@
-tabla = document.querySelector('#horarios')
-function Consulta() {
 
-   fetch("http://proveedores.alsea.com.ar:48080/asignaciones-server/mobile/main/asignaciones/legajos/37472")
+function Consulta() {
+tabla = document.querySelector('#horarios')
+legajo=document.getElementById(legajo).value
+urlApi="http://proveedores.alsea.com.ar:48080/asignaciones-server/mobile/main/asignaciones/legajos/"
+urlFinal=urlApi+legajo
+   fetch(urlFinal)
       .then(res => res.json())
       .then(response => {
          console.log(response.asignaciones[0].fecha);
