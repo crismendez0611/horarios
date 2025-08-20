@@ -1,7 +1,7 @@
 
 function Consulta() {
 tabla = document.querySelector('#horarios')
-legajo=document.getElementById(legajo).value
+legajo=document.getElementById("legajo").value
 urlApi="http://proveedores.alsea.com.ar:48080/asignaciones-server/mobile/main/asignaciones/legajos/"
 urlFinal=urlApi+legajo
    fetch(urlFinal)
