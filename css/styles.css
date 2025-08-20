@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(255, 135, 50);
+   
+}
+
+h1,
+label,
+input {
+    color: red;
+}
+
+tr {
+    color: green;
+    align-items: center;
+    text-align: center;
+
+}
+
+table {
+    margin: 1cm;
+    background-color: rgb(78, 32, 21);
+    align-items: center;
+}
