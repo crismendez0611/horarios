@@ -5,32 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta de Horarios</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="icons/Burger_King_2020.svg.png" type="png">
-    </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="icons/icono.png" type="png">
+</head>
 
 <body>
+    <div class="titulo justify-content-center alig-items-center p-4">
+        <img src="images/icono.png" alt="logo" class="imagen" height="40" width="50">
+        <h1>Consulta de Horarios</h1>
+    </div>
     <div class="container lg p-2">
-    <h1>Consulta de Horarios </h1>
-    <div class="col 2 mb-1 row p-3">
-    <label for="text" class="mb-1 p-3 center">Ingrese Legajo: <input  type="text" placeholder="Legajo" id="legajo" name="legajo"> </label>
-    <button class="mb-1 p-1 " onclick="Consulta()">Consultar</button>
-    </div>
-    <div class="col 3 mb-3 row p-4">
-        <table id="horarios">
-            <tr>
-                <th>Fecha</th>
-                <th> Entrada</th>
-                <th>Salida</th>
-                <th>Local</th>
-            </tr>
 
-        </table>
+        <div class="col 2 mb-1 row p-3 justify-content-center alig-items-center">
+            <div class="mb-1 p-1">
+                <label for="text" class="mb-1 p-3 center">Ingrese Legajo: <input type="text" placeholder="Legajo"
+                        id="legajo" name="legajo"> </label>
+                <button class="mb-1 p-1 " onclick="Consulta()">Consultar</button>
+            </div>
+        </div>
+        <div class="col 3 mb-1 row p-4">
+            <table id="horarios">
+                <tr>
+                    <th>Fecha</th>
+                    <th> Entrada</th>
+                    <th>Salida</th>
+                    <th>Local</th>
+                </tr>
+
+            </table>
+        </div>
     </div>
-    </div>
+
     <script src="js/consultar.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
