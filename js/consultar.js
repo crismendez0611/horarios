@@ -5,6 +5,7 @@ legajo=document.getElementById("legajo").value
 urlApi="http://proveedores.alsea.com.ar:48080/asignaciones-server/mobile/main/asignaciones/legajos/"
 urlFinal=urlApi+legajo
    fetch(urlFinal)
+   .this(error=>alert("No se pudo consultar"))
       .then(res => res.json())
       .then(response => {
          console.log(response.asignaciones[0].fecha);
